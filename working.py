@@ -43,8 +43,8 @@ def transform(soup):
     return
 
 joblist = []
-for i in range(0,200,10):
-    url = f"https://malaysia.indeed.com/jobs?q=data+analyst+intern&l=Malaysia&start={i}"
+for i in range(0,200,10): # customize here
+    url = f"https://malaysia.indeed.com/jobs?q=data+analyst+intern&l=Malaysia&start={i}" # customize here
     print(f'Getting', {url})
     c = extract(url)
     transform(c)
