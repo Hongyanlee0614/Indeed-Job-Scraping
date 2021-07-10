@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 def extract(url):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'}
+    headers = {'User-Agent': 'MY USER AGENT'} # replace with your user agent
     r = requests.get(url, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
